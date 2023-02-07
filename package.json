@@ -1,5 +1,6 @@
 {
   "name": "my-app",
+  "homepage": "https://bobo100.github.io/React-Transitions-All/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -15,9 +16,12 @@
     "react-router-dom": "^6.8.1",
     "react-scripts": "5.0.1",
     "typescript": "^4.9.5",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "gh-pages": "^5.0.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
