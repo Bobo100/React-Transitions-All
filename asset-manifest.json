@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/React-Transitions-All/static/css/main.d324b156.css",
-    "main.js": "/React-Transitions-All/static/js/main.c01da239.js",
+    "main.js": "/React-Transitions-All/static/js/main.5a6550e6.js",
     "static/js/787.28cb0dcd.chunk.js": "/React-Transitions-All/static/js/787.28cb0dcd.chunk.js",
     "static/media/card_use.jpg": "/React-Transitions-All/static/media/card_use.a99b88f9cf5eabc79bb4.jpg",
     "index.html": "/React-Transitions-All/index.html",
     "main.d324b156.css.map": "/React-Transitions-All/static/css/main.d324b156.css.map",
-    "main.c01da239.js.map": "/React-Transitions-All/static/js/main.c01da239.js.map",
+    "main.5a6550e6.js.map": "/React-Transitions-All/static/js/main.5a6550e6.js.map",
     "787.28cb0dcd.chunk.js.map": "/React-Transitions-All/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d324b156.css",
-    "static/js/main.c01da239.js"
+    "static/js/main.5a6550e6.js"
   ]
 }
