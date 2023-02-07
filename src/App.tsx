@@ -15,7 +15,7 @@ function App() {
     <>
       <Router>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/React-Transitions-All" element={<Home />} />
           <Route path="/book" element={<Book />} />
           <Route path="/flip" element={<Flip />} />
         </Routes>
