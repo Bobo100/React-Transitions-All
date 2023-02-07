@@ -9,18 +9,16 @@ import NotFoundPage from './pages/Error';
 
 function App() {
   return (
-    // <div className="App">
-    //   <Book></Book>
-    //   <Flip></Flip>
-    // </div>
     <>
       <Router basename='/React-Transitions-All'>
-        <Routes>
-          <Route path="" element={<Home />} />
-          <Route path="/book" element={<Book />} />
-          <Route path="/flip" element={<Flip />} />
-          <Route path="*" element={<NotFoundPage />}></Route>
-        </Routes>
+        <div className='pages'>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/book" element={<Book />} />
+            <Route path="/flip" element={<Flip />} />
+            <Route path="*" element={<NotFoundPage />}></Route>
+          </Routes>
+        </div>
       </Router>
     </>
   );
