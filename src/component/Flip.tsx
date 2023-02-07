@@ -46,10 +46,12 @@ export const Flip = () => {
                 <div className={`page ${isFlipped3 ? "flipped" : ""}`} onClick={handleFlip3}>點擊卡片擊可翻轉</div>
                 <div className={`page ${isFlipped3 ? "" : "flipped"}`} onClick={handleFlip3}>這是背面故事</div>
             </div>
-
-            <div className="linkMiddle">
-                <NavLink to="/">回首頁</NavLink>
-            </div>
+            
+            <NavLink to="/">
+                <div className="linkMiddle">
+                    回首頁
+                </div>
+            </NavLink>
 
         </div>
     );

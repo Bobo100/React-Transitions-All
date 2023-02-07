@@ -1,18 +1,18 @@
-.linkMiddle {
+a {
+  color: #000;
+  text-decoration: none;
+  margin: 20px;
+}
+a .linkMiddle {
   margin: 20px auto;
   width: 300px;
   text-align: center;
   padding: 10px;
   border: 1px solid #000;
 }
-.linkMiddle:hover {
+a .linkMiddle:hover {
   background-color: #000;
 }
-.linkMiddle:hover a {
+a:hover {
   color: #fff;
-}
-.linkMiddle a {
-  color: #000;
-  text-decoration: none;
-  margin: 20px;
 }/*# sourceMappingURL=App.css.map */
