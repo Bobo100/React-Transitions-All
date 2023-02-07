@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./css/Flip.css";
 import { NavLink } from "react-router-dom";
 
@@ -17,6 +17,31 @@ export const Flip = () => {
     const handleFlip3 = () => {
         setIsFlipped3(!isFlipped3);
     };
+
+
+    // const [rotateDeg1, setRotateDeg1] = useState(0);
+    // const [rotateDeg2, setRotateDeg2] = useState(180);
+    // const rotateElement = (element: HTMLImageElement, rotateDeg: number, setRotateDeg: React.Dispatch<React.SetStateAction<number>>) => {
+    //     let newRotateDeg = (rotateDeg + 180) % 360;
+    //     setRotateDeg(newRotateDeg);
+    //     element.style.transform = `rotateY(${newRotateDeg}deg)`;
+    // };
+    // useEffect(() => {
+    //     const elements = document.querySelectorAll('.magic_card') as NodeListOf<HTMLImageElement>;
+    //     elements.forEach((element, index) => {
+    //         let rotateDeg: number, setRotateDeg: React.Dispatch<React.SetStateAction<number>>;
+    //         if (index === 0) {
+    //             rotateDeg = rotateDeg1;
+    //             setRotateDeg = setRotateDeg1;
+    //         } else {
+    //             rotateDeg = rotateDeg2;
+    //             setRotateDeg = setRotateDeg2;
+    //         }
+    //         const intervalId = setInterval(() => rotateElement(element, rotateDeg, setRotateDeg), 800);
+    //         return () => clearInterval(intervalId);
+    //     });
+    // }, [rotateDeg1, rotateDeg2]);
+
 
     return (
         <div>
@@ -46,13 +71,18 @@ export const Flip = () => {
                 <div className={`page ${isFlipped3 ? "flipped" : ""}`} onClick={handleFlip3}>點擊卡片擊可翻轉</div>
                 <div className={`page ${isFlipped3 ? "" : "flipped"}`} onClick={handleFlip3}>這是背面故事</div>
             </div>
-            
+
+            {/* 庫洛牌翻轉 */}
+            <div className="magic_page_container">
+                <img src={require("./../image/CWindy.jpeg")} alt="123" className={`magic_card`} />
+                <img src={require("./../image/ClowCardSideB.jpg")} alt="123" className={`magic_card magic_page`} />
+            </div>
+
             <NavLink to="/">
                 <div className="linkMiddle">
                     回首頁
                 </div>
             </NavLink>
-
         </div>
     );
 };
