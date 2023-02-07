@@ -14,9 +14,9 @@ function App() {
     //   <Flip></Flip>
     // </div>
     <>
-      <Router>
+      <Router basename='/React-Transitions-All'>
         <Routes>
-          <Route path="/React-Transitions-All" element={<Home />} />
+          <Route path="" element={<Home />} />
           <Route path="/book" element={<Book />} />
           <Route path="/flip" element={<Flip />} />
           <Route path="*" element={<NotFoundPage />}></Route>
